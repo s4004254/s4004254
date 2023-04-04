@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>
+            Dream
+        </title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+    </head>
+
+    <body style="background-color: rgb(98, 114, 136);">
+        <img id="Mermaid" src="img/Mermaid_dream.png" width="350"/>
+        <img id="MonsterBed" src="img/Monster_under_bed.png" width="350"/>
+        <img id="MoonSleeping" src="img/Sleeping_on_moon_dream.png" width="350"/>
+        <img id="JumpingPlanets" src="img/Planet_jumping_dream.png" onmouseover="this.src='img/Planet_jumping_away_dream.png';" onmouseout="this.src='img/Planet_jumping_dream.png';"width="350"/>
+        <img id="CountingHumans" src="img/counting_people_dream.png" width="350"/>
+        <img id="CountingSheep" src="img/Counting_sheep_dream.png" width="350"/>
+        <img id="NakedSchool" src="img/naked_school_dream.png" width="350"/>
+        <img id="FallingDream" src="img/falling_dream.png" width="350"/>
+        <img id="Teeth" src="img/teeth_falling_out_dream.png" width="350"/>
+
+        
+        
+        
+        <script>
+            var sound1 = new buzz.sound("sound/bubbling.mp3");
+            var sound2 = new buzz.sound("sound/Ladyoo.mp3");
+            var sound3 = new buzz.sound("sound/Lullaby.mp3");
+            var sound4 = new buzz.sound("sound/Boing.mp3");
+            var sound5 = new buzz.sound("sound/sheep.mp3");
+            var sound6 = new buzz.sound("sound/snoring.mp3");
+            var sound7 = new buzz.sound("sound/Laughing.mp3");
+            var sound8 = new buzz.sound("sound/FallingScream.mp3");
+            var sound9 = new buzz.sound("sound/Teethscream.mp3");
+
+            window.onload = function() {
+                document.getElementById('Mermaid').addEventListener('mouseover', function () {sound1.play();});
+                document.getElementById('MonsterBed').addEventListener('mouseover', function () {sound2.play();});
+                document.getElementById('MoonSleeping').addEventListener('mouseover', function () {sound3.play();});
+                document.getElementById('JumpingPlanets').addEventListener('mouseover', function () {sound4.play();});
+                document.getElementById('CountingHumans').addEventListener('mouseover', function () {sound5.play();});
+                document.getElementById('CountingSheep').addEventListener('mouseover', function () {sound6.play();});
+                document.getElementById('NakedSchool').addEventListener('mouseover', function () {sound7.play();});
+                document.getElementById('FallingDream').addEventListener('mouseover', function () {sound8.play();});
+                document.getElementById('Teeth').addEventListener('mouseover', function () {sound9.play();});
+
+            };
+
+
+
+        </script>
+
+    </body>
+</html>
